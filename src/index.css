@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+
+  --color-slate-950: #070B14;
+  --color-slate-900: #0F172A;
+  --color-slate-850: #162032;
+  --color-slate-800: #1E293B;
+  --color-slate-700: #334155;
+  --color-slate-600: #475569;
+  --color-slate-400: #94A3B8;
+  --color-slate-300: #CBD5E1;
+  --color-slate-50: #F8FAFC;
+
+  --color-primary: #2563EB;
+  --color-secondary: #7C3AED;
+  --color-accent: #EC4899;
+}
+
+@layer base {
+  * {
+    border-color: #334155;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #0F172A;
+    color: #F8FAFC;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Accessible focus styling */
+:focus-visible {
+  outline: 2px solid #2563EB;
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

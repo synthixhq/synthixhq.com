@@ -1,0 +1,86 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.yarn/
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+
+# Production build artifacts
+dist/
+dist-ssr/
+build/
+out/
+.vite/
+
+# Logs and runtime diagnostics
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Environment configs and local overrides
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+*.local
+*.local.*
+
+# Local drafts, scratchpads, and developer notes
+scratch/
+.scratch/
+notes/
+private/
+*.tmp
+*.temp
+*.bak
+*.orig
+*~
+TODO.md
+TODO-*.md
+SCRATCHPAD.md
+NOTES.md
+PLAN.md
+TASK-*.md
+WIP-*.md
+DRAFT-*.md
+INTERNAL-*.md
+HANDOFF*.md
+CLAUDE*.md
+GEMINI*.md
+AGENTS*.md
+*.draft.md
+*.private.md
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# IDE and editor settings
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swo
+*.swn
